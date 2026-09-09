@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+            background-color: black;
+            flex-flow: row nowrap;
+        }
+
+        div {
+            background-color: aqua;
+            margin: 2px;
+            padding: 5px;
+            text-align: center;
+            flex-basis: 250px;
+        }
+
+        .teste1 {
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        #t1 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }        
+
+        #t2 {
+            flex-grow: 0;
+            flex-shrink: 2;
+        }  
+
+        #t3 {
+            flex-grow: 2;
+            flex-shrink: 0;
+        }  
+    </style>
+</head>
+<body>
+    <section>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </section>
+    <hr>
+    <section>
+        <div class="teste1">A</div>
+        <div class="teste1">B</div>
+        <div class="teste1">C</div>
+    </section>
+    <hr>
+    <section>
+        <div id="t1">A</div>
+        <div id="t2">B</div>
+        <div id="t3">C</div>
+    </section>
+    
+</body>
+</html>
