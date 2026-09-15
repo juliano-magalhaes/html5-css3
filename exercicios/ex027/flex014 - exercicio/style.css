@@ -2,7 +2,15 @@
 
 * {
     line-height: 1.5em;
+    margin: 0%;
+    padding: 0%;
 }
+
+body p, h1, h2 {
+    padding: 10px;
+}
+
+
 
 .flex {
     background-color: aqua;
@@ -15,11 +23,23 @@ article {
 }
 
 .media-text {
-    flex-flow: column wrap;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
 }
 
-.media-text > .media {
-    order: -1;
+.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1 1 500px;
+}
+
+.media {
+    flex: 1 0 400px;
 }
 
 div {
@@ -27,7 +47,15 @@ div {
 }
 
 img {
-    width: 250px;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 90vw;
 }
 
 
