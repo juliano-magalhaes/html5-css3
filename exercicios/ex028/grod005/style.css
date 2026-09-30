@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.container {
+    border: 3px solid black;
+    padding: 3px;
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, auto);
+    gap: 5px;
+    background-color: yellow;
+}
+
+.c1 {
+    border: 3px dashed rgb(0, 0, 0);
+    padding: 5px;
+    background-color: aqua;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.c2 {
+    border: 3px dashed rgb(0, 0, 0);
+    padding: 5px;
+    background-color: blue;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+
+.c3 {
+    border: 3px dashed rgb(19, 0, 0);
+    padding: 5px;
+    background-color: brown;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
